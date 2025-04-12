@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/config_server/pom.xml" />
         <option value="$PROJECT_DIR$/sample_a/pom.xml" />
+        <option value="$PROJECT_DIR$/register-server/pom.xml" />
       </list>
     </option>
   </component>
