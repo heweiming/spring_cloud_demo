@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          # uri: file:///Users/sunxian/config-repo
+          uri: https://github.com/heweiming/config_repo
+          default-label: main  # Explicitly set to your local branch name
+          #force-pull: false   # Disable remote operations
+          #clone-on-start: false
+          #ignore-local-ssh-settings: true
+          #strict-host-key-checking: false
+          #delete-untracked-branches: false
+
+logging:
+  level:
+    org.springframework.cloud.config.server: DEBUG
+    org:
+      springframework:
+        cloud:
+          config:
+            server:
+                environment: TRACE
+
+#server:
+#  port: 8888
