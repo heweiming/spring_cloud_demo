@@ -1,4 +1,4 @@
-package com.example.eureka_client2;
+package com.springclouddemo.samplec;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
