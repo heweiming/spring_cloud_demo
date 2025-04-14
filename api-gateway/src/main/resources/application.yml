@@ -1,0 +1,27 @@
+spring:
+    cloud:
+        gateway:
+            routes:
+                - id: sample-b
+                  uri: lb://SAMPLE-B
+                  predicates:
+                      - Path=/b/**
+                  filters:
+                      - StripPrefix=1  # Removes /api/users from the forwarded request
+    web:
+        resources:
+                    add-mappings: false  # Disables default static resource handling
+
+logging:
+    level:
+        org.springframework.cloud.gateway: DEBUG
+        org.springframework.web: DEBUG
+        org.springframework.http.client: DEBUG
+        org.springframework.web.reactive.function.client: DEBUG
+        reactor.netty.http.client.HttpClient: DEBUG
+        reactor.netty.http.server.HttpServer: DEBUG
+        io.netty.handler.logging.LoggingHandler: DEBUG
+        io.netty.channel.ChannelInboundHandlerAdapter: DEBUG
+        io.netty.channel.ChannelOutboundHandlerAdapter: DEBUG
+        io.netty.channel.ChannelInitializer: DEBUG
+        io.netty.channel.ChannelOption: DEBUG
