@@ -20,9 +20,8 @@
     <modules>
         <module>common</module>
         <module>config_server</module>
-        <module>sample_a</module>
-<!--        <module>service-a</module>-->
-<!--        <module>service-b</module>-->
+        <module>sample_b</module>
+        <module>sample_c</module>
         <!-- 其他子模块 -->
     </modules>
 

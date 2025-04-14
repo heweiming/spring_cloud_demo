@@ -8,17 +8,27 @@
         <outputRelativeToContentRoot value="true" />
         <module name="register-server" />
         <module name="common" />
-        <module name="sample_a" />
+        <module name="sample_b" />
         <module name="config_server" />
+        <module name="sample_c" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-client" target="17" />
+      <module name="sample-c" target="17" />
+      <module name="sample_a" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
       <module name="config_server" options="-parameters" />
+      <module name="eureka-client" options="-parameters" />
       <module name="register-server" options="-parameters" />
+      <module name="sample-c" options="-parameters" />
       <module name="sample_a" options="-parameters" />
+      <module name="sample_b" options="-parameters" />
+      <module name="sample_c" options="-parameters" />
     </option>
   </component>
 </project>
